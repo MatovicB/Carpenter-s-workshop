@@ -1,0 +1,337 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #f1f1f1;
+    font-family: 'Kanit', sans-serif;
+}
+/*  START HEADER */
+header{
+    width: 100%;
+    padding:20px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    background-color: #f1f1f1;
+    z-index: 2;
+}
+#logo{
+    width: 30%;
+
+}
+#logo a{
+    text-decoration: none;
+}
+#logo a h1{
+    font-size: 36px;
+    color: #16702b;
+    font-family: 'Climate Crisis', cursive;
+    letter-spacing: 5px;
+}
+nav{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+nav ul li{
+    margin-right:30px;
+    
+}
+nav ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color:#000;
+    font-size: 20px;
+    font-weight:600;
+}
+nav ul li:hover{
+    border-bottom: 2px solid #16702b;
+}
+/*  END HEADER */
+
+/* START HOMEPAGE */
+#homepage-okvir{
+    background-image: url("../img/cover.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#homepage-blok{
+    width: 50%;
+    margin:300px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255,255,255,0.3);
+}
+#homepage-blok h2{
+    font-size: 80px;
+    color: #16702b;
+    font-family: 'Climate Crisis', cursive;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px #000;
+}
+#homepage-blok p{
+    font-size: 30px;
+    font-weight: 600;
+    font-style: italic;
+}
+#homepage-blok a{
+    text-decoration: none;
+    background-color: #16702b;
+    width: 25%;
+    height: 30px;
+    text-align: center;
+    padding:30px;
+    margin:20px 0px;
+    border-radius: 30px;
+    color: #f1f1f1;
+    font-size: 20px;
+}
+
+#proizvodi-okvir{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.proizvodi-blok{
+    position: relative;
+    width: 50%;
+    max-width:500px;
+    margin:40px 0px;
+    box-shadow: 5px 5px 20px #000;
+  }
+
+.slikaProizvoda {
+    display: block;
+    width: 100%;
+  }
+  
+.overlay {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    background: rgba(22, 112, 43, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    transition: 0.5s ease;
+    opacity:0;
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+  }
+  
+.proizvodi-blok:hover .overlay {
+    opacity: 1;
+}
+
+/* END HOMEPAGE */
+
+/*  START FOOTER */
+footer{
+    width: 100%;
+    height: 100px;
+    background-color:#16702b;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #f1f1f1;
+}
+footer ul{
+    list-style-type: none;
+    display: flex;
+}
+footer ul li a{
+    margin:20px;
+    color: #f1f1f1;
+}
+/*  END FOOTER */
+
+/* O NAMA START*/
+#oNama-okvir{
+    display: flex;
+    flex-direction: column;
+}
+.blokONama{
+    display: flex;
+    justify-content: space-evenly;
+    margin:30px 0px;
+}
+.oNamaTekst{
+    width: 45%;
+    background-color:#16702b;
+    border-radius: 50px;
+    text-align: center;
+}
+.oNamaTekst h3{
+    font-size: 34px;
+    margin: 20px 0px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-shadow: 2px 2px 5px #f1f1f1;
+}
+.oNamaTekst p{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f1f1f1;
+    line-height: 36px;
+    text-indent: 30px;
+}
+#prvi{
+    margin-bottom: 50px;
+}
+/* O NAMA END*/
+
+/* GALERIJA START */
+.galerija {
+    display: grid;
+    justify-items: center;
+    width: 95%;
+    margin:30px auto ;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
+  }
+  
+  .galerija img {
+    width: 100%;
+    border: 2px solid #fff;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease-in;
+    height: 100%;
+  }
+  
+  .galerija img:hover {
+    transform: scale(1.05);
+  }
+
+/* GALERIJA END */
+#kontakt-mapa-blok{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px 0px;
+}
+#mapa{
+    box-shadow: 0 0 20px 0 #000;
+}
+/* FORM START*/
+#kontakt-forma{
+    width: 40%;
+    box-shadow: 0 0 20px 0 #000;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input-polje{
+    width: 65%;
+    height: 40px;
+    margin-top: 30px;
+    padding: 0px 10px;
+    border: 2px solid #000;
+    border-radius: 24px;
+}
+.input-polje-textarea{
+    width: 80%;
+    height: 200px;
+    margin-top: 30px;
+    border: 2px solid #000;
+}
+.btn{
+    border-radius: 20px;
+    width: 30%;
+    color: #fff;
+    margin: 30px 0px;
+    padding: 10px;
+    background-color: #16702b;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover{
+   background-color:  #2fb33a;
+}
+/* FORM END*/
+/* NASLOVI START*/
+.nasloviStranice{
+    margin: 100px;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Climate Crisis', cursive;
+    font-family: 'PT Serif', serif;
+
+    position: relative;
+    max-width: 1000px;
+    margin: 100px auto;
+    text-align: center;
+} 
+  .nasloviStranice:before{
+    content:" ";
+    height: 2px;
+    width: 550px;
+    background: #16702b;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -300px
+  }
+  
+  .nasloviStranice:after{
+    content:" ";
+    height: 2px;
+    width: 550px;
+    background: #16702b;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: -300px;
+  }
+/* NASLOVI END*/
+
+/* O AUTORU START */
+#o-autoru-okvir{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    margin: 40px auto;
+}
+#slika-autora img:hover{
+    transform: scaleX(-1);
+}
+#tekst-o-autoru{
+    width: 50%;
+    text-align: left;
+    font-size: 30px;
+}
+.animacija-desno{
+    animation-name: animacijaSaDesnaNaLevo;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    position: relative;
+    color: #16702b;
+}
+@keyframes animacijaSaDesnaNaLevo{
+    0%{left:1000px;}
+    100%{left:0px;}
+}
+/* O AUTORU END */
