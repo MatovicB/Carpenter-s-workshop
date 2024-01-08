@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+ 
+    <channel>
+        <title>Obavestenja</title>
+        <link>https://stolarijaukras.000webhostapp.com/index.html</link>
+        <description>Ovde se nalaze obaveštenja našeg sajta.</description>
+
+        <item>
+            <title>Ažurirana stranice Galerija</title>
+            <link>https://stolarijaukras.000webhostapp.com/galerija.html</link>
+            <description>Dodate su nove slike u našu galeriju</description>
+        </item>
+        <item>
+            <title>Promena naših socijalnih mreža</title>
+            <link>https://www.instagram.com/matovicc5/</link>
+            <description>Promenili smo ime našeg instagram profila</description>
+        </item>
+    </channel>
+</rss>
